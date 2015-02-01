@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/User_Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/User_Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/Username"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/UserEnter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:hint="@string/UserEnter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Pass_Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/User_Form">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/Pass_text"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/UserPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:hint="@string/PassEnter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Confirm_Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Pass_Form">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/Confirm_Text"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/UserConfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:hint="@string/ConfirmEnter" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Confirm_Form"
+        android:layout_below="@id/Confirm_Form"
+        android:text="@string/Submit" />
+
+
+</RelativeLayout>
